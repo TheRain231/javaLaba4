@@ -14,7 +14,6 @@ class User {
     String phone;
     String photo;
 
-    // Конструктор
     public User(int id, String name, String company, String username, String email, String address,
                 String zip, String state, String country, String phone, String photo) {
         this.id = id;
@@ -30,7 +29,6 @@ class User {
         this.photo = photo;
     }
 
-    // Метод для красивого вывода информации о пользователе
     public String toString() {
         return "ID: " + id + "\n"
                 + "Name: " + name + "\n"

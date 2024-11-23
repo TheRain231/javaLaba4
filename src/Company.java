@@ -14,7 +14,6 @@ public class Company {
     String logo;
     String ceoName;
 
-    // Конструктор
     public Company(int id, String name, String address, String zip, String country, int employeeCount, String industry, long marketCap, String domain, String logo, String ceoName) {
         this.id = id;
         this.name = name;
@@ -29,7 +28,6 @@ public class Company {
         this.ceoName = ceoName;
     }
 
-    // Метод для красивого вывода информации о пользователе
     public String toString() {
         return "ID: " + id + "\n"
                 + "Name: " + name + "\n"

@@ -21,7 +21,7 @@ public class PrintJSON {
         } catch (IOException e) {
             System.err.println(e);
         }
-        // Преобразование строки JSON в список объектов
+
         switch (kind){
             case USER:
                 List<User> users = User.parseJsonToUsers(jsonString.toString());
@@ -38,9 +38,6 @@ public class PrintJSON {
                 }
                 break;
         }
-
-        // Выводим информацию о каждом пользователе
-
     }
 
     enum JSONKind{
